@@ -27,7 +27,10 @@ const Topbar = () => {
           </div>
         </div>
       </div>
-      <p style={{ color: "white" }}>A -&gt; Z</p>
+      {/* <p style={{ color: "white" }}>A -&gt; Z</p> */}
+      {/* <div className="title__left">
+        <button>keluar</button>
+      </div> */}
     </div>
   );
 };

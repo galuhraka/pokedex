@@ -1,12 +1,8 @@
-import Topbar from "./components/topbar/Topbar";
-import Bottombar from "./components/bottombar/Bottombar";
-import Pokelist from "./components/pokelist/Pokelist";
+import Homepage from "./pages/Homepage";
 function App() {
   return (
     <>
-      <Topbar />
-      <Pokelist />
-      <Bottombar />
+      <Homepage />
     </>
   );
 }

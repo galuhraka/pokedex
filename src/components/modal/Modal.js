@@ -1,6 +1,6 @@
 import React from "react";
 import "./Modal.css";
-import pokeball from "../../images/pokeball.png";
+import pokeball from "../../images/pokeball-black.png";
 import bg from "../../images/bg.webp";
 
 const Modal = ({
@@ -66,40 +66,40 @@ const Modal = ({
           height: "500px",
         }}
       >
-          <div className="stat-container-title">
-            <img src={image} alt={name} className="image-title" />
-            <p style={{ width: "180px", color: "black" }}>No. {id}</p>
-            <p>{name}</p>
-            <img src={pokeball} alt="pokeball" className="pokeball-title" />
+        <div className="stat-container-title">
+          <img src={image} alt={name} className="image-title" />
+          <p style={{ width: "180px", color: "black" }}>No. {id}</p>
+          <p>{name}</p>
+          <img src={pokeball} alt="pokeball" className="pokeball-title" />
+        </div>
+        <div style={{ display: "flex", width: "100%" }}>
+          <div
+            style={{ background: "#dbdbd9", textAlign: "center" }}
+            className="stats-left"
+          >
+            <p>Type</p>
+            <p>Height</p>
+            <p>Weight</p>
           </div>
-          <div style={{ display: "flex", width: "100%" }}>
-            <div
-              style={{ background: "#dbdbd9", textAlign: "center" }}
-              className="stats-left"
-            >
-              <p>Type</p>
-              <p>Height</p>
-              <p>Weight</p>
-            </div>
-            <div style={{ background: "#fff" }} className="stats-right">
-              <p>{type}</p>
-              <p>{height}0 cm</p>
-              <p>{weight} lbs</p>
-            </div>
+          <div style={{ background: "#fff" }} className="stats-right">
+            <p>{type}</p>
+            <p>{height}0 cm</p>
+            <p>{weight} lbs</p>
           </div>
+        </div>
 
-          <div className="base-stats">
-            <div>
-              {statsName.map((stats) => (
-                <p className="stats">{stats}</p>
-              ))}
-            </div>
-            <div>
-              {stats.map((stats) => (
-                <p className="stats">{stats}</p>
-              ))}
-            </div>
+        <div className="base-stats">
+          <div>
+            {statsName.map((stats) => (
+              <p className="stats">{stats}</p>
+            ))}
           </div>
+          <div>
+            {stats.map((stats) => (
+              <p className="stats">{stats}</p>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   );
