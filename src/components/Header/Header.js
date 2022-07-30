@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Button from "react-bootstrap/Button";
 import pokeball from "../../images/pokeball.png";
 import "./Header.css";
-import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "../../Auth/Firebase";
 import { useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
@@ -11,7 +10,6 @@ const Header = () => {
   const navigate = useNavigate();
 
   const [show, handleShow] = useState(false);
-  const [user, loading, error] = useAuthState(auth);
 
   const logOut = () => {
     signOut(auth);
