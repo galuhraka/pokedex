@@ -17,14 +17,7 @@ function App() {
             </ProtectedComponent>
           }
         />
-        <Route
-          path="/register"
-          element={
-            <ProtectedComponent>
-              <Registerpage />
-            </ProtectedComponent>
-          }
-        />
+        <Route path="/register" element={<Registerpage />} />
         <Route path="/" element={<Homepage />} />
       </Routes>
     </>
