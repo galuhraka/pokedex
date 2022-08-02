@@ -18,7 +18,7 @@ function App() {
           }
         />
         <Route path="/register" element={<Registerpage />} />
-        <Route path="/" element={<Homepage />} />
+        <Route exact path="/" element={<Homepage />} />
       </Routes>
     </>
   );
